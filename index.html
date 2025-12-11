@@ -10,6 +10,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -107,7 +111,8 @@
         <div class="store-card">
           <img src="assets/store2.jpg" alt="Indore Store">
           <div class="store-info">
-            <p class="store-location"><i class="fas fa-map-marker-alt"></i> Indore, Madhya Pradesh</p>
+            <p class="store-location"><i class="fas fa-map-marker-alt"></i> Indore, Madhya
+              Pradesh</p>
             <p class="store-address">Dewas Naka, Lasudia Mori, Indore, 452012</p>
             <p class="store-phone">097278 33337</p>
           </div>
@@ -127,6 +132,96 @@
 
       <div class="stores-btn-wrapper">
         <a href="#" class="stores-btn">Learn More <span>➜</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-series-section">
+    <div class="ps-container">
+
+      <div class="ps-header">
+        <div class="ps-heading">
+          <h2>Explore Our<br>Product Series</h2>
+        </div>
+
+        <div class="ps-right">
+          <p>
+            Discover our wide range of vitrified tile<br>
+            collections crafted for modern interiors.
+          </p>
+          <button class="ps-btn">Explore All Collections</button>
+        </div>
+      </div>
+
+      <div class="ps-grid" id="ps-grid"></div>
+
+    </div>
+  </section>
+
+  <section class="why-section" aria-labelledby="why-title">
+    <div class="why-inner">
+
+      <!-- LEFT: Large image -->
+      <div class="why-left" aria-hidden="true">
+        <figure class="hero-image">
+          <img src="assets/Rectangle 19.jpg" alt="Interior scene - large" />
+        </figure>
+      </div>
+
+      <!-- RIGHT: Content -->
+      <div class="why-right">
+
+        <!-- top row: bird + title -->
+        <div class="why-meta">
+          <!-- gold bird icon (inline SVG) -->
+          <div class="bird" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path
+                d="M3.5 13C3.5 13 6 9 11 9C13.5 9 15.5 10 17 11.5C18.5 13 20 13 20 13C20 13 18.5 14 17.5 14C16.5 14 15 13.5 13 13.5C11 13.5 9.5 14.5 8 15C6.5 15.5 4.5 16 3.5 13Z"
+                fill="currentColor" />
+              <path d="M12 3C14 3 16 5 16 7C16 8.5 15 9 15 9" stroke="currentColor" stroke-width="0" fill="none" />
+            </svg>
+          </div>
+
+          <h2 id="why-title" class="why-title">Why Choose Passero</h2>
+        </div>
+
+        <!-- description -->
+        <p class="why-desc">
+          Crafting premium vitrified tiles with advanced technology, refined design, and uncompromised quality — trusted
+          by homeowners, architects, and global partners.
+        </p>
+
+        <!-- stats and small image -->
+        <div style="display:flex;align-items:center;gap:1.6rem;">
+          <div>
+            <div class="why-stats" role="list">
+              <div class="stat" role="listitem">
+                <p class="stat-number" data-target="10">0</p>
+                <p class="stat-label">Years of<br>Excellence</p>
+              </div>
+
+              <div class="stat" role="listitem">
+                <p class="stat-number" data-target="100">0</p>
+                <p class="stat-label">Product<br>Designs</p>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <button class="cta" id="learn-more">
+                Learn More
+                <span class="arrow" aria-hidden="true">➜</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- small image -->
+          <div class="why-small" aria-hidden="true">
+            <img src="assets/Rectangle 20.png" alt="Small interior image" />
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
