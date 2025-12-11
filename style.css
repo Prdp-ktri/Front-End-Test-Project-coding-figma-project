@@ -27,7 +27,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent;
+  background: #000;
   z-index: 10;
   padding-top: 10px;
 }
@@ -183,7 +183,7 @@ a:hover {
 
 .mobile-nav {
   display: none;
-  background: #111;
+  background: rgba(0, 0, 0, 0.9);
   width: 100%;
   padding: 20px;
 }
@@ -228,4 +228,108 @@ a:hover {
   background: #ffffff !important;
   color: #1f2937 !important;
   border-color: #ffffff !important;
+}
+
+/* ===================== MOBILE HERO + HEADER + MENU ===================== */
+@media (max-width: 768px) {
+  /* Transparent header like Figma */
+  .header {
+    background: transparent !important;
+    backdrop-filter: blur(4px);
+    padding-top: 5px;
+  }
+
+  /* Hero height + proper background crop */
+  .hero {
+    height: 680px; /* same as Figma 375×680 */
+    background-position: center;
+  }
+
+  /* Lighter overlay (matches Figma more closely) */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.04) 0%,
+      rgba(0, 0, 0, 0.12) 45%,
+      rgba(0, 0, 0, 0.22) 80%,
+      rgba(0, 0, 0, 0.28) 100%
+    );
+  }
+
+  /* Center content higher like Figma */
+  .hero-content {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    top: 22%; /* perfect Figma match */
+    transform: translateY(0);
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    margin-top: 12px;
+    opacity: 0.85;
+  }
+
+  /* Stack buttons vertically */
+  .hero-buttons {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* Full-width buttons */
+  .hero-buttons a {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 10px;
+  }
+
+  /* Primary button (white-filled) */
+  .btn-outline {
+    background: #ffffff;
+    color: #1f2937;
+    border: 2px solid #ffffff;
+  }
+
+  /* Secondary button (transparent) */
+  .btn-filled {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+
+  /* Fix hover conflict — buttons now change color independently */
+  .hero-buttons a.btn-outline:hover {
+    background: #f8f8f8 !important;
+    color: #1f2937 !important;
+  }
+
+  .hero-buttons a.btn-filled:hover {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+  }
+
+  /* Hamburger menu */
+  .menu-icon span {
+    background: #ffffff !important;
+    opacity: 0.9;
+  }
+
+  /* Prevent menu from darkening header */
+  .mobile-nav {
+    margin-top: 60px; /* sits BELOW the transparent header */
+    background: rgba(0, 0, 0, 0.85);
+    padding: 25px;
+  }
+
+  .mobile-nav ul {
+    gap: 22px;
+  }
 }
