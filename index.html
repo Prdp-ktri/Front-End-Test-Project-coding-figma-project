@@ -158,74 +158,58 @@
     </div>
   </section>
 
+  <!-- WHY / PASSERO SECTION - Paste this into your page where needed -->
   <section class="why-section" aria-labelledby="why-title">
     <div class="why-inner">
-
-      <!-- LEFT: Large image -->
-      <div class="why-left" aria-hidden="true">
-        <figure class="hero-image">
-          <img src="assets/Rectangle 19.jpg" alt="Interior scene - large" />
-        </figure>
+      <!-- LEFT: large hero image -->
+      <div class="why-left">
+        <div class="hero-image">
+          <img src="assets/Rectangle 19.jpg" alt="Interior styled vignette showing tiles and decor">
+        </div>
       </div>
 
-      <!-- RIGHT: Content -->
+      <!-- RIGHT: content -->
       <div class="why-right">
-
-        <!-- top row: bird + title -->
         <div class="why-meta">
-          <!-- gold bird icon (inline SVG) -->
-          <div class="bird" aria-hidden="true">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true">
-              <path
-                d="M3.5 13C3.5 13 6 9 11 9C13.5 9 15.5 10 17 11.5C18.5 13 20 13 20 13C20 13 18.5 14 17.5 14C16.5 14 15 13.5 13 13.5C11 13.5 9.5 14.5 8 15C6.5 15.5 4.5 16 3.5 13Z"
-                fill="currentColor" />
-              <path d="M12 3C14 3 16 5 16 7C16 8.5 15 9 15 9" stroke="currentColor" stroke-width="0" fill="none" />
-            </svg>
-          </div>
-
-          <h2 id="why-title" class="why-title"> <img
-              src="/Front-End-Test-Project-coding-figma-project/assets/Frame 1.png" alt=""> Why Choose Passero</h2>
+          <span class="bird" aria-hidden="true"><img src="assets/" alt=""></span>
+          <!-- optional small icon; the .bird color is controlled by CSS -->
         </div>
 
-        <!-- description -->
+        <h2 id="why-title" class="why-title">Why Choose Passero</h2>
+
         <p class="why-desc">
           Crafting premium vitrified tiles with advanced technology, refined design, and uncompromised quality — trusted
           by homeowners, architects, and global partners.
         </p>
 
-        <!-- stats and small image -->
-        <div style="display:flex;align-items:center;gap:1.6rem;">
-          <div>
-            <div class="why-stats" role="list">
-              <div class="stat" role="listitem">
-                <p class="stat-number" data-target="10">0</p>
-                <p class="stat-label">Years of<br>Excellence</p>
-              </div>
+        <!-- small visual image (right) -->
+        <div class="why-small" aria-hidden="true">
+          <img src="assets/Rectangle 20.png" alt="">
+        </div>
 
-              <div class="stat" role="listitem">
-                <p class="stat-number" data-target="100">0</p>
-                <p class="stat-label">Product<br>Designs</p>
-              </div>
-            </div>
-
-            <div class="cta-row">
-              <button class="cta" id="learn-more">
-                Learn More
-                <span class="arrow" aria-hidden="true">➜</span>
-              </button>
-            </div>
+        <!-- stats -->
+        <div class="why-stats" role="list" aria-label="Key statistics">
+          <div class="stat" role="listitem">
+            <p class="why-num">10+</p>
+            <p class="stat-label">Years of Excellence</p>
           </div>
 
-          <!-- small image -->
-          <div class="why-small" aria-hidden="true">
-            <img src="assets/Rectangle 20.png" alt="Small interior image" />
+          <div class="stat" role="listitem">
+            <p class="why-num">100+</p>
+            <p class="stat-label">Product Designs</p>
           </div>
         </div>
 
+        <!-- CTA -->
+        <div class="cta-row">
+          <button class="cta" type="button" aria-label="Learn more about Passero">
+            Learn More <span class="arrow">→</span>
+          </button>
+        </div>
       </div>
     </div>
   </section>
+
 
 
   <script src="script.js"></script>
