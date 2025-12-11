@@ -116,3 +116,32 @@ document.getElementById("learn-more").addEventListener("click", function (e) {
   // For demo: simply log
   console.log("Learn More clicked");
 });
+
+// Animated counters (safe class names)
+(function animate() {
+  const yearsEl = document.getElementById("years");
+  const designsEl = document.getElementById("designs");
+
+  // final values
+  const yearsTarget = 10;
+  const designsTarget = 100;
+
+  // animate helper
+  function run(el, target, duration = 1000, suffix = "+") {
+    let start = 0;
+    const startTime = performance.now();
+    function step(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const current = Math.floor(progress * target);
+      el.textContent = current + (progress === 1 ? suffix : "");
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // run both after small delay (so user sees effect)
+  setTimeout(() => {
+    run(yearsEl, yearsTarget, 900, "+");
+    run(designsEl, designsTarget, 1100, "+");
+  }, 350);
+})();
