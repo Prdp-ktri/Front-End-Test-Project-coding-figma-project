@@ -27,7 +27,9 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: #000;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(4px);
   z-index: 10;
   padding-top: 10px;
 }
@@ -183,7 +185,7 @@ a:hover {
 
 .mobile-nav {
   display: none;
-  background: rgba(0, 0, 0, 0.9);
+  background-color: transparent;
   width: 100%;
   padding: 20px;
 }
@@ -228,6 +230,10 @@ a:hover {
   .hero-content p {
     font-size: 16px;
   }
+
+  .header {
+    background: transparent;
+  }
 }
 
 .hero-buttons a.btn-outline:hover {
@@ -246,13 +252,6 @@ a:hover {
 @media (max-width: 768px) {
   body {
     background: red !important;
-  }
-
-  /* Transparent header like Figma */
-  .header {
-    background: transparent !important;
-    backdrop-filter: blur(4px);
-    padding-top: 5px;
   }
 
   /* Hero height + proper background crop */
@@ -330,7 +329,7 @@ a:hover {
   /* Prevent menu from darkening header */
   .mobile-nav {
     margin-top: 60px; /* sits BELOW the transparent header */
-    background: rgba(0, 0, 0, 0.85);
+    background-color: transparent;
     padding: 25px;
   }
 
