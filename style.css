@@ -1212,6 +1212,7 @@ body {
   background: #f7f1e7;
   padding: 60px 0 30px;
   font-family: "Poppins";
+  font-style: "normal";
   color: #4d4d4d;
   font-size: 16px;
 }
@@ -1241,16 +1242,19 @@ body {
   font-size: 12px;
   line-height: 1.6;
   margin-bottom: 15px;
+  font-weight: 400;
 }
 
 .footer-col ul {
   padding: 0;
   margin: 0;
+  font-weight: 400;
   list-style: none;
 }
 
 .footer-col ul li {
   margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .footer-col ul li a {
@@ -1258,19 +1262,23 @@ body {
   color: #4d4d4d;
   text-decoration: none;
   transition: 0.3s;
+  font-weight: 400;
 }
 
 .footer-col ul li a:hover {
   opacity: 0.6;
+  font-weight: 400;
 }
 
 .footer-contact a {
   color: #4d4d4d;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .footer-contact a:hover {
   opacity: 0.6;
+  font-weight: 400;
 }
 
 .footer-line {
@@ -1278,6 +1286,7 @@ body {
   width: 90%;
   border: none;
   border-top: 1px solid #e0d7c8;
+  font-weight: 400;
 }
 
 .footer-bottom {
@@ -1287,10 +1296,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 400;
 }
 
 .footer-bottom p {
   font-size: 14px;
+  font-weight: 400;
 }
 
 .footer-socials a img {
