@@ -337,3 +337,156 @@ a:hover {
     gap: 22px;
   }
 }
+
+/* ========== BRAND STORES SECTION ========== */
+
+.brand-stores-section {
+  padding: 80px 0;
+  background: #f4ede3; /* beige background as per screenshot */
+  display: flex;
+  justify-content: center;
+}
+
+.stores-container {
+  max-width: 1200px;
+  width: 90%;
+  text-align: center;
+}
+
+.stores-title {
+  font-size: 56px;
+  font-weight: 110;
+  color: #1f1f1f;
+  font-family: Playfair Display;
+  line-height: 110px;
+  color: #2d2d2d;
+}
+
+.stores-subtitle {
+  font-family: "inter";
+  font-weight: 24;
+  font-style: 16;
+  margin: 15px auto 40px;
+  max-width: 750px;
+  font-size: 16px;
+  color: #555;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #555;
+}
+
+/* GRID */
+.stores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.store-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+.store-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.store-info {
+  padding: 15px 18px;
+  text-align: left;
+}
+
+.store-location {
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-bottom: 6px;
+}
+
+.store-location i {
+  color: #c6921a;
+  margin-right: 6px;
+}
+
+.store-address {
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.store-phone {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.stores-btn-wrapper {
+  margin-top: 40px;
+}
+
+.stores-btn {
+  display: inline-block;
+  background: #1f2937;
+  padding: 12px 26px;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.stores-btn:hover {
+  background: #111827;
+}
+
+.stores-btn span {
+  margin-left: 6px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .stores-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .stores-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stores-title {
+    font-size: 30px;
+  }
+
+  .stores-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Heading */
+.section-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 110px;
+  color: #2d2d2d;
+  font-weight: 400;
+}
+
+/* Subtext */
+.section-subtext {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+  font-weight: 400;
+}
