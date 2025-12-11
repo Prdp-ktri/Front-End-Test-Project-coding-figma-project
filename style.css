@@ -195,6 +195,18 @@ a:hover {
   gap: 20px;
 }
 
+.hero-buttons a.btn-outline:hover {
+  background: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.hero-buttons a.btn-filled:hover {
+  background: #ffffff !important;
+  color: #1f2937 !important;
+  border-color: #ffffff !important;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 992px) {
   .nav {
@@ -232,6 +244,10 @@ a:hover {
 
 /* ===================== MOBILE HERO + HEADER + MENU ===================== */
 @media (max-width: 768px) {
+  body {
+    background: red !important;
+  }
+
   /* Transparent header like Figma */
   .header {
     background: transparent !important;
@@ -303,17 +319,6 @@ a:hover {
     background: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
-  }
-
-  /* Fix hover conflict — buttons now change color independently */
-  .hero-buttons a.btn-outline:hover {
-    background: #f8f8f8 !important;
-    color: #1f2937 !important;
-  }
-
-  .hero-buttons a.btn-filled:hover {
-    background: #ffffff !important;
-    color: #1f2937 !important;
   }
 
   /* Hamburger menu */
