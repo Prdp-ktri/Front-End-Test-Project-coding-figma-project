@@ -124,3 +124,8 @@ document.querySelector(".wp-btn").addEventListener("mouseenter", function () {
 document.querySelector(".wp-btn").addEventListener("mouseleave", function () {
   this.style.opacity = "1";
 });
+
+document.querySelectorAll(".footer-col a").forEach((link) => {
+  link.addEventListener("mouseenter", () => (link.style.opacity = "0.6"));
+  link.addEventListener("mouseleave", () => (link.style.opacity = "1"));
+});
